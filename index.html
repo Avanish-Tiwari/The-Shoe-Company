@@ -11,33 +11,55 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    ///https://www.figma.com/design/KRagV1oBRnzQAOIOwalUgz/The-Shoe-Company?node-id=0-1&p=f&t=yhrsW1MSB2CRNVia-0
   </head>
   <body class="bg-black text-white font-['Archivo']">
-    <header class="px-14 flex justify-between items-center">
+    <!-- https://www.figma.com/design/KRagV1oBRnzQAOIOwalUgz/The-Shoe-Company?node-id=0-1&p=f&t=yhrsW1MSB2CRNVia-0 -->
+
+    <header class=" section-container flex justify-between fixed w-full  left-[50%] translate-x-[-50%] ">
       <a href="#" >
-        <img class="w-32" src="./images/logo.png" alt="logo" />
-        <p class="text-sm -mt-8">The Shoe Company</p>
+        <img class="w-14 md:w-32" src="./images/logo.png" alt="logo" />
+        <p class="text-[9px] md:text-sm -mt-3 md:-mt-8">The Shoe Company</p>
       </a>
-      <nav class=" hidden md:block space-x-8 lg:space-x-10 font-bold lg:text-2xl ">
-        <a href="#">Home</a>
+      <nav class=" hidden md:block space-x-6 lg:space-x-8 font-bold lg:text-2xl ">
+        <a href="#hero">Home</a>
         <a href="#how-it-works">How  It Works?</a>
         <a href="#about">About</a>
         <a href="#testimonial">Testimonials</a>
         <a href="#contact">Contact Us</a>
       </nav>
-      <button class="text-5xl md:hidden">☰</button>
+      <button class="text-2xl md:text-5xl md:hidden">☰</button>
     </header>
-    <section id="hero" class="flex items-center bg-[url('./images/hero-background.png')] bg-contain bg-no-repeat bg-right">
-       <div class="flex m-auto items-center text-6xl font-bold leading-[72px]">
-        <h1 >THE<br>
+    <section id="hero" class="section-container flex pt-36  bg-[url('./images/hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right">
+       <div class="flex flex-col md:flex-row md:m-auto md:items-center max-w-6xl font-bold ">
+        <h1 class="leading-[36px] md:leading-[72px] text-3xl md:text-6xl">THE<br>
             SHOE<br>
             COMPANY</h1>
         <div>
-            <img class="w-[440px]" src="./images/hero-image.png" alt="hero-image">
+            <img class="w-full max-w-xl" src="./images/hero-image.png" alt="hero-image">
         </div>
 
        </div>
+    </section>
+    <section id="how-it-works" class="section-container flex mt-10 flex-col">
+      <h2 class=" text-center text-2xl md:text-3xl m-auto">Have they finally made the <br> perfect workout shoe?</h2>
+      <div class="mt-40 md:mt-32 relative">
+        <img class="w-full  max-w-60 md:max-w-80 lg:max-w-xl xl:max-w-2xl rotate-6 md:rotate-0" src="./images/how-it-works.png" alt="how-it-works">
+        <div class="max-w-60  absolute -left-7  -top-32  md:-translate-x-full md:-top-24 lg:-top-12 md:left-1 lg:left-5">
+          <h2 class="text-xl font-bold">THE HEEL</h2>
+          <p class="text-sm font-[400] max-w-52">The heel is well-built, has appropriate elevation and is not too rigid.</p>
+          <img class="md:ml-auto  max-w-20 md:max-w-28 lg:max-w-40 xl:max-w-48 rotate-45 md:rotate-0" src="./images/arrow-1.png" alt="">
+        </div>
+        <div class="max-w-50  absolute md:translate-x-full md:-top-4 lg:top-0 md:right-6 lg:right-20  ">
+          <img class="mr-auto -ml-28 lg:-ml-40 md:max-w-28 lg:max-w-40" src="./images/arrow-2.png" alt="">
+          <h2 class="ml-auto text-xl font-bold md:-mt-16 lg:-mt-24">THE FRONT</h2>
+          <p class="text-sm font-[400] ml-auto max-w-48">The front is comfortable and adjusts well to the shape of your foot.</p>
+        </div>
+        <div class="max-w-60  absolute translate-y-full md:bottom-24 lg:bottom-36 md:-left-20 lg:-left-0">
+          <img class="ml-28 md:max-w-28 lg:max-w-40" src="./images/arrow-3.png" alt="">
+          <h2 class="text-xl font-bold md:-mt-16 lg:-mt-20">TRACTION</h2>
+          <p class="text-sm font-[400] max-w-48">The shoe has good traction and doesn't slip easily.</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
