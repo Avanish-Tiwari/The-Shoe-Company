@@ -15,49 +15,173 @@
   <body class="bg-black text-white font-['Archivo']">
     <!-- https://www.figma.com/design/KRagV1oBRnzQAOIOwalUgz/The-Shoe-Company?node-id=0-1&p=f&t=yhrsW1MSB2CRNVia-0 -->
 
-    <header class=" section-container flex justify-between fixed w-full  left-[50%] translate-x-[-50%] ">
-      <a href="#" >
+    <header
+      class="section-container py-0 flex justify-between fixed w-full left-[50%] translate-x-[-50%] bg-black/25 backdrop-blur-md z-10"
+    >
+      <a href="#">
         <img class="w-14 md:w-32" src="./images/logo.png" alt="logo" />
         <p class="text-[9px] md:text-sm -mt-3 md:-mt-8">The Shoe Company</p>
       </a>
-      <nav class=" hidden md:block space-x-6 lg:space-x-8 font-bold lg:text-2xl ">
+      <nav class="hidden md:block space-x-6 lg:space-x-8 font-bold lg:text-2xl">
         <a href="#hero">Home</a>
-        <a href="#how-it-works">How  It Works?</a>
+        <a href="#how-it-works">How It Works?</a>
         <a href="#about">About</a>
         <a href="#testimonial">Testimonials</a>
         <a href="#contact">Contact Us</a>
       </nav>
       <button class="text-2xl md:text-5xl md:hidden">☰</button>
     </header>
-    <section id="hero" class="section-container flex pt-36  bg-[url('./images/hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right">
-       <div class="flex flex-col md:flex-row md:m-auto md:items-center max-w-6xl font-bold ">
-        <h1 class="leading-[36px] md:leading-[72px] text-3xl md:text-6xl">THE<br>
-            SHOE<br>
-            COMPANY</h1>
+    <section
+      id="hero"
+      class="section-container flex pt-36 bg-[url('./images/hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right"
+    >
+      <div
+        class="flex flex-col md:flex-row md:m-auto md:items-center max-w-6xl font-bold"
+      >
+        <h1 class="leading-[36px] md:leading-[72px] text-3xl md:text-6xl">
+          THE<br />
+          SHOE<br />
+          COMPANY
+        </h1>
         <div>
-            <img class="w-full max-w-xl" src="./images/hero-image.png" alt="hero-image">
+          <img
+            class="w-full max-w-xl"
+            src="./images/hero-image.png"
+            alt="hero-image"
+          />
         </div>
-
-       </div>
+      </div>
     </section>
-    <section id="how-it-works" class="section-container flex mt-10 flex-col">
-      <h2 class=" text-center text-2xl md:text-3xl m-auto">Have they finally made the <br> perfect workout shoe?</h2>
+    <section
+      id="how-it-works"
+      class="section-container flex pt-10 pb-20 flex-col bg-[#222222]"
+    >
+      <h2 class="text-center text-2xl md:text-3xl m-auto">
+        Have they finally made the <br />
+        perfect workout shoe?
+      </h2>
       <div class="mt-40 md:mt-32 relative">
-        <img class="w-full  max-w-60 md:max-w-80 lg:max-w-xl xl:max-w-2xl rotate-6 md:rotate-0" src="./images/how-it-works.png" alt="how-it-works">
-        <div class="max-w-60  absolute -left-7  -top-32  md:-translate-x-full md:-top-24 lg:-top-12 md:left-1 lg:left-5">
-          <h2 class="text-xl font-bold">THE HEEL</h2>
-          <p class="text-sm font-[400] max-w-52">The heel is well-built, has appropriate elevation and is not too rigid.</p>
-          <img class="md:ml-auto  max-w-20 md:max-w-28 lg:max-w-40 xl:max-w-48 rotate-45 md:rotate-0" src="./images/arrow-1.png" alt="">
+        <img
+          class="w-full max-w-60 md:max-w-80 lg:max-w-xl xl:max-w-2xl rotate-6 md:rotate-0"
+          src="./images/how-it-works.png"
+          alt="how-it-works"
+        />
+        <div
+          class="max-w-36 md:max-w-60 absolute -left-7 -top-32 md:-translate-x-full md:-top-24 lg:-top-12 md:left-1 lg:left-5"
+        >
+          <h2 class="text-lg md:text-xl font-bold">THE HEEL</h2>
+          <p class="text-xs md:text-sm font-[400] max-w-52">
+            The heel is well-built, has appropriate elevation and is not too
+            rigid.
+          </p>
+          <img
+            class="md:ml-auto max-w-20 md:max-w-28 lg:max-w-40 xl:max-w-48 rotate-45 md:rotate-0"
+            src="./images/arrow-1.png"
+            alt=""
+          />
         </div>
-        <div class="max-w-50  absolute md:translate-x-full md:-top-4 lg:top-0 md:right-6 lg:right-20  ">
-          <img class="mr-auto -ml-28 lg:-ml-40 md:max-w-28 lg:max-w-40" src="./images/arrow-2.png" alt="">
-          <h2 class="ml-auto text-xl font-bold md:-mt-16 lg:-mt-24">THE FRONT</h2>
-          <p class="text-sm font-[400] ml-auto max-w-48">The front is comfortable and adjusts well to the shape of your foot.</p>
+        <div
+          class="max-w-50 absolute md:translate-x-full top-0 md:-top-4 lg:-top-1 xl:top-6 -right-8 md:right-6 lg:right-20 xl:right-24"
+        >
+          <img
+            class="mr-auto md:-ml-28 lg:-ml-40 max-w-16 md:max-w-28 lg:max-w-40 xl:max-w-48 rotate-[125deg] md:rotate-0"
+            src="./images/arrow-2.png"
+            alt=""
+          />
+          <h2
+            class="ml-auto text-lg md:text-xl font-bold -mt-40 md:-mt-16 lg:-mt-24"
+          >
+            THE FRONT
+          </h2>
+          <p class="text-xs md:text-sm font-[400] ml-auto max-w-28 md:max-w-48">
+            The front is comfortable and adjusts well to the shape of your foot.
+          </p>
         </div>
-        <div class="max-w-60  absolute translate-y-full md:bottom-24 lg:bottom-36 md:-left-20 lg:-left-0">
-          <img class="ml-28 md:max-w-28 lg:max-w-40" src="./images/arrow-3.png" alt="">
-          <h2 class="text-xl font-bold md:-mt-16 lg:-mt-20">TRACTION</h2>
-          <p class="text-sm font-[400] max-w-48">The shoe has good traction and doesn't slip easily.</p>
+        <div
+          class="max-w-60 absolute translate-y-full bottom-12 md:bottom-24 lg:bottom-36 md:-left-20 lg:-left-0"
+        >
+          <img
+            class="ml-auto md:ml-28 max-w-20 md:max-w-28 lg:max-w-40 xl:max-w-48"
+            src="./images/arrow-3.png"
+            alt=""
+          />
+          <h2 class="text-lg md:text-xl font-bold -mt-6 md:-mt-16 lg:-mt-20">
+            TRACTION
+          </h2>
+          <p class="text-xs md:text-sm font-[400] max-w-36 md:max-w-48">
+            The shoe has good traction and doesn't slip easily.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="about"
+      class="section-container flex flex-col md:flex-row bg-[#222222] py-12"
+    >
+      <h1 class="text-3xl font-bold md:hidden">About us</h1>
+      <div
+        class="bg-[url('./images/about-us-background.png')] bg-no-repeat w-full mt-4"
+      >
+        <img src="./images/about-shoe-company.png" alt="leg" />
+      </div>
+      <div class="px-8 md:px-16 space-y-4 max-w-xs md:max-w-full">
+        <h1 class="text-6xl font-bold hidden md:block">About Us!</h1>
+        <p class="text-base md:text-xl">
+          For each one of those shoe sweethearts out there, THE SHOE COMPANY
+          offer the one-stop goal to pick the correct match of footwear.
+        </p>
+        <p class="text-xl hidden md:block">
+          Gone are the days when you needed to go from store to store to locate
+          the correct style and size for yourself
+        </p>
+        <p class="text-base md:text-xl">
+          At THE SHOE COMPANY, you can locate a vast accumulation of dashing
+          footwear in all sizes and styles, all inside a couple of snaps.
+        </p>
+        <p class="text-xl hidden md:block">
+          Simple right? Not just we are here to spare your time, we are putting
+          forth you the most dazzling footwear alternatives from all the
+          first-rate brands like DAVINCHI, PRINCESS, and SIGNATURE. At
+          ‘Organization Name’, we offer men, ladies, and child’s shoes perfect
+          for any and each event.
+        </p>
+      </div>
+    </section>
+    <section
+      id="testimonials"
+      class="section-container bg-[url('./images/testimonial-section-background.png')] bg-cover pb-10 md:pb-24"
+    >
+      <h1 class="text-2xl md:text-6xl font-bold max-w-80 md:max-w-4xl m-auto text-center py-24">
+        What People are saying about THE SHOE COMPANY ?
+      </h1>
+     
+      <div class="flex items-center justify-between px-4 flex-col md:flex-row gap-5">
+        <div class="max-w-64 text-center flex flex-col items-center">
+          <div class="rounded-full overflow-hidden max-w-24 md:max-w-full">
+            <img src="./images/testimonial-1.png" alt="" />
+          </div>
+          <p>
+            “Looking for shoes that are built just for you? THE SHOE COMPANY is
+            the way to go. Love the design and build quality.”
+          </p>
+        </div>
+        <div class="max-w-72 text-center flex flex-col items-center">
+          <div class="rounded-full overflow-hidden max-w-24 md:max-w-full">
+            <img src="./images/testimonial-2.png" alt="" />
+          </div>
+          <p>
+            “I love the shoes, the quality, and everyting. They are worth the
+            investment!”
+          </p>
+        </div>
+        <div class="max-w-64 text-center flex flex-col items-center">
+          <div class="rounded-full overflow-hidden max-w-24 md:max-w-full">
+            <img src="./images/testimonial-3.png" alt="" />
+          </div>
+          <p>
+            “They make the best and forever lasting shoes. Superb fit and
+            confort is literally the next level. Much recommended!”
+          </p>
         </div>
       </div>
     </section>
